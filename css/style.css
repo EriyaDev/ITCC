@@ -353,8 +353,10 @@ header nav ul .side-satu, .side-dua, .side-tiga, .side-empat{
 .kursus-card{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 400px;
+    height: 400px;
     padding: 5px;
 
     background-color: var(--warna-secondary);
@@ -834,6 +836,22 @@ form{
         overflow-x: auto;
     }
 
+    .startup-icon-section::-webkit-scrollbar {
+        width: 10px; /* width of the scrollbar */
+    }
+    
+    .startup-icon-section::-webkit-scrollbar-thumb {
+        background-color: transparent; /* color of the thumb */
+    }
+    
+    .startup-icon-section::-webkit-scrollbar-track {
+        background-color: transparent; /* color of the track */
+    }
+    
+    .startup-icon-section::-webkit-scrollbar-button {
+        background-color: transparent; /* color of the buttons (arrows) */
+    }
+
     .text{
         width: 90%;
     }
@@ -841,6 +859,22 @@ form{
     .startup-icon-section-mengapa-memilih{
         justify-content: start;
         overflow-x: auto;
+    }
+
+    .startup-icon-section-mengapa-memilih::-webkit-scrollbar {
+        width: 10px; /* width of the scrollbar */
+    }
+    
+    .startup-icon-section-mengapa-memilih::-webkit-scrollbar-thumb {
+        background-color: transparent; /* color of the thumb */
+    }
+    
+    .startup-icon-section-mengapa-memilih::-webkit-scrollbar-track {
+        background-color: transparent; /* color of the track */
+    }
+    
+    .startup-icon-section-mengapa-memilih::-webkit-scrollbar-button {
+        background-color: transparent; /* color of the buttons (arrows) */
     }
 
     .course-list{
@@ -890,5 +924,21 @@ form{
     .wishlist{
         width: 10%;
         height: 100%;
+    }
+
+    .modul-page-container{
+        flex-direction: column;
+    }
+
+    .video-pembelajaran{
+        width: 100%;
+    }
+    
+    .deskripsi-modul{
+        color: var(--warna-teks-secondary);
+    }
+    
+    .modul-page-container aside{
+        width: 100%;
     }
 }
