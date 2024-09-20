@@ -513,8 +513,9 @@ footer{
     transition: .3s;
 }
 
-.enroll-btn:hover, .wishlist:hover, .sign-in-btn button:hover{
+.enroll-btn:hover, .wishlist:hover, .sign-in-btn:hover{
     background-color: #1a0ec1;
+    color: var(--warna-teks-primary);
 }
 
 .wishlist{
@@ -669,11 +670,24 @@ form{
 }
 
 .sign-in-btn{
-    width: 100%;
     margin-top: 3rem;
+
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 500;
+
+    text-align: center;
+
+    background-color: var(--warna-aksen);
+    color: var(--warna-teks-primary);
+    border: none;
+    border-radius: 8px;
+
+    transition: .3s;
 }
 
-.sign-in-btn button{
+/* .sign-in-btn button{
     width: 100%;
     padding: 10px 0;
     font-size: 1rem;
@@ -685,7 +699,7 @@ form{
     border-radius: 8px;
 
     transition: .3s;
-}
+} */
 
 .belum-punya-akun{
     margin-top: 8px;
@@ -696,6 +710,91 @@ form{
 }
 
 .belum-punya-akun a{
+    color: var(--warna-aksen);
+}
+
+/* Modul */
+
+.modul-page-container{
+    width: 100%;
+    padding: 4rem 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+.video-pembelajaran{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.deskripsi-modul{
+    color: var(--warna-teks-secondary);
+}
+
+.modul-page-container aside{
+    width: 30%;
+    background-color: var(--warna-secondary);
+    border-left: 3px solid var(--warna-border);
+    border-radius: 10px 0 0 10px;
+    height: 100vh;
+}
+
+.modul-container{
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--warna-secondary); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--warna-teks-secondary); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.modul-container h2{
+    color: var(--warna-teks-primary);
+    font-weight: 500;
+}
+
+.modul-container ul{
+    padding: 12px 2rem;
+}
+
+.modul-container li{
+    list-style: circle;
+    color: var(--warna-teks-secondary);
+}
+
+.modul-container ul li a{
+    color: var(--warna-teks-secondary);
+    transition: .3s;
+}
+
+.modul-container ul li a:hover{
     color: var(--warna-aksen);
 }
 
