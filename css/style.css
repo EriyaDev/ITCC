@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 :root {
   --primary-color: #18181a;
@@ -20,37 +21,35 @@ body {
   background-color: var(--primary-color);
   color: var(--text-primary-color);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* GLOBAL variabel */
 
 .big-title {
-    font-family: "Inter", sans-serif;
-  font-size: 40px;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
   font-weight: 700;
   color: var(--text-primary-color);
-  margin-bottom: 1rem;
 }
 
 .medium-title {
     font-family: "Inter", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   color: var(--text-primary-color);
-  margin-bottom: 0.75rem;
 }
 
 .small-title {
   font-family: "Inter", sans-serif;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 500;
   color: var(--text-primary-color);
-  margin-bottom: 0.5rem;
 }
 
 .text {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: var(--text-primary-color);
 }
@@ -75,6 +74,75 @@ body {
   max-width: 85%;
   padding-top: 3.5rem;   
   padding-bottom: 3.5rem;
+}
+
+.code-container{
+  display: block;
+  background: var(--secondary-color);
+  color: var(--text-primary-color);
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+pre code {
+  font-family: 'Fira Code', monospace;
+  overflow-x: auto;
+}
+
+.keyword { color: var(--accent-color); }   /* pakai accent */
+.string { color: #fbbf24; }    /* kuning */
+.comment { color: var(--text-secondary-color); }
+
+.margin-top-1{
+  margin-top: 8px;
+}
+.margin-top-2{
+  margin-top: 12px;
+}
+.margin-top-3{
+  margin-top: 24px;
+}
+
+.margin-top-4{
+  margin-top: 32px;
+}
+
+
+
+@media (min-width: 768px){
+  .big-title {
+  font-size: 36px;
+}
+
+.medium-title {
+  font-size: 24px;
+}
+
+.small-title {
+  font-size: 20px;
+}
+
+.text {
+  font-size: 16px;
+}
+}
+@media (min-width: 1024px){
+  .big-title {
+  font-size: 40px;
+}
+
+.medium-title {
+  font-size: 32px;
+}
+
+.small-title {
+  font-size: 1.2rem;
+}
+
+.text {
+  font-size: 16px;
+}
 }
 
 .profile{
@@ -116,6 +184,7 @@ a{
 
 .badge-group{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
 }
@@ -229,11 +298,11 @@ header {
 }
 @media (min-width: 1024px) {
   .desktop-only {
-    display: inline-block;
+    display: block;
   }
 }
 .mobile-only {
-  display: inline-block;
+  display: block;
 }
 @media (min-width: 1024px) {
   .mobile-only {
@@ -311,7 +380,7 @@ header {
   width: 100%;
   flex-direction: column;
   gap: 12px;
-  border-top: 1px solid var(--text-inactive-color);
+  border-top: 1px solid var(--border-color);
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border-color);
 }
@@ -331,6 +400,7 @@ header {
 /* Sidebar */
 
 #sidebar{
+  display: none;
   position: fixed;
   height: calc(100vh - 74px);
   left: 0;
@@ -338,6 +408,13 @@ header {
   background-color: var(--secondary-color);
   padding: 64px 48px;
   border-right: 1px solid var(--border-color);
+
+}
+
+@media (min-width: 1024px) {
+  #sidebar{
+    display: block;
+}
 }
 
 #sidebar ul {
@@ -376,7 +453,7 @@ li{
 }
 
 #main-content{
-  max-width: 95%;
+  max-width: 85%;
   padding-top: 32px;
   margin: auto;
 }
@@ -398,7 +475,8 @@ li{
   justify-content: space-between;
 }
 
-.left-interaction{
+.left-interaction,
+.right-interaction{
   display: flex;
   align-items: center;
   gap: 24px;
@@ -414,7 +492,9 @@ li{
 .downvote,
 .comment,
 .share,
-.bookmark{
+.bookmark,
+.more,
+.copy{
   display: flex;
   align-items: center;
   gap: 4px;
@@ -431,6 +511,24 @@ li{
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.interaction-thread-detail{
+  padding: 12px;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.copy-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.thread-content-list{
+  list-style: disc;
 }
 
 @media (min-width: 1024px) {
