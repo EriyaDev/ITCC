@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body class="detail-page">
     <header>
       <nav class="navbar section-container">
         <div class="logo">
@@ -158,7 +158,7 @@
           <li class="">
             <p class="small-title">Popular Tags</p>
           </li>
-          <li class="sidebar-list">
+          <li class="sidebar-list margin-top-1">
             <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
               class="text"
               href="#home"
@@ -205,10 +205,12 @@
     <main id="main-content-container">
       <div id="main-content">
         <div class="thread-header">
-          <h1 class="big-title">
+          <h1 class="medium-title">
             Gimana Cara Lakukan OSINT Buat Footprinting Perusahaan Secara Legal?
           </h1>
-          <p class="small-text">Diposting 21 Aug 2025 oleh newbieSec</p>
+          <p class="small-text">
+            Diposting 21 Aug 2025 oleh <span class="accent">newbieSec</span>
+          </p>
           <div class="profile margin-top-3">
             <img
               src="assets/images/profile.jpg"
@@ -274,7 +276,228 @@
           <br />
           <p class="text">Thanks sebelumnya!</p>
         </div>
-        <div class="thread-comments"></div>
+        <div class="thread-comments">
+          <h3 class="small-title">Comments (5)</h3>
+
+          <div class="user-comment margin-top-3">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">cyberphreak</p>
+                <p class="date tiny-text">Dijawab 1d ago</p>
+              </div>
+            </div>
+            <div class="comment-balloon margin-top-2">
+              <pre class="text">
+  Ini alur OSINT pasif yang aman:
+  
+  1. Subdomain Enumeration
+  Tools yang bisa kamu pakai:</pre
+              >
+              <div class="code-container">
+                <div class="copy-container">
+                  <p class="text">Code</p>
+                  <div class="copy">
+                    <img src="assets/icons/file-copy-line.svg" alt="" />
+                    <p class="tiny-text">Copy</p>
+                  </div>
+                </div>
+                <pre><code><span class="keyword">amass</span> <span class="keyword">enum</span> -d <span class="string">target.com</span>
+<span class="keyword">sublist3r</span> -d <span class="string">target.com</span></code></pre>
+              </div>
+              <p class="text">
+                Keduanya ngambil data dari sumber publik kayak DNS, jadi aman.
+                <br />
+                <br />
+                2. Cek Email yang Pernah Bocor Pake Have I Been Pwned atau tool
+                holehe buat ngecek email di banyak platform (tanpa login):
+              </p>
+              <div class="code-container">
+                <div class="copy-container">
+                  <p class="text">Code</p>
+                  <div class="copy">
+                    <img src="assets/icons/file-copy-line.svg" alt="" />
+                    <p class="tiny-text">Copy</p>
+                  </div>
+                </div>
+                <pre><code><span class="keyword">holehe</span> user@target.com</code></pre>
+              </div>
+              <p class="text">
+                Ingat: jangan pernah login pakai credential hasil bocoran. Itu
+                udah masuk ranah kriminal. <br />
+                <br />
+                3. Fingerprint Teknologi Pake whatweb atau wappalyzer CLI:
+              </p>
+              <div class="code-container">
+                <div class="copy-container">
+                  <p class="text">Code</p>
+                  <div class="copy">
+                    <img src="assets/icons/file-copy-line.svg" alt="" />
+                    <p class="tiny-text">Copy</p>
+                  </div>
+                </div>
+                <pre><code><span class="keyword">whatweb</span> https://target.com</code></pre>
+              </div>
+              <pre class="text">
+  4. Public Footprint (LinkedIn, GitHub, dll)
+  Gunakan Google Dorking:</pre
+              >
+              <div class="code-container">
+                <div class="copy-container">
+                  <p class="text">Code</p>
+                  <div class="copy">
+                    <img src="assets/icons/file-copy-line.svg" alt="" />
+                    <p class="tiny-text">Copy</p>
+                  </div>
+                </div>
+                <pre><code><span class="keyword">site:</span>linkedin.com <span class="string">"Nama Perusahaan"</span> <span class="keyword">AND</span> <span class="string">"developer"</span></code></pre>
+              </div>
+              <div class="thread-interaction">
+                <div class="left-interaction">
+                  <div class="vote">
+                    <div class="upvote">
+                      <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                      <p class="text">84</p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                    <p class="text">1</p>
+                  </div>
+                  <div class="share">
+                    <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="reply-user-comment margin-top-2">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">cyberphreak</p>
+                <p class="date tiny-text">Dijawab 1d ago</p>
+              </div>
+            </div>
+            <div class="comment-balloon margin-top-2">
+              <pre><span class="accent username">cyberphreak</span> <span class="text">Terimakasih banyak!</span></pre>
+              <div class="thread-interaction">
+                <div class="left-interaction">
+                  <div class="vote">
+                    <div class="upvote">
+                      <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                      <p class="text">0</p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                    <p class="text">0</p>
+                  </div>
+                  <div class="share">
+                    <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-comment margin-top-3">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">osintHunter</p>
+                <p class="date tiny-text">Dijawab 7h ago</p>
+              </div>
+            </div>
+            <div class="comment-balloon margin-top-2">
+              <p class="text">Kalau mau lebih advance, coba ini:</p>
+              <li class="thread-content-list text">
+                Maltego → buat mapping relasi entitas (domain, IP, email) secara
+                visual.
+              </li>
+              <li class="thread-content-list text">
+                SpiderFoot → OSINT automation dengan dashboard web.
+              </li>
+              <li class="thread-content-list text">
+                theHarvester → ambil email, subdomain, IP dari sumber publik:
+              </li>
+              <div class="code-container">
+                <div class="copy-container">
+                  <p class="text">Code</p>
+                  <div class="copy">
+                    <img src="assets/icons/file-copy-line.svg" alt="" />
+                    <p class="tiny-text">Copy</p>
+                  </div>
+                </div>
+                <pre><code><span class="keyword">theHarvester</span> <span class="keyword">-d</span> <span class="">target.com</span> <span class="keyword">-b</span> <span class="string">all</span></code></pre>
+              </div>
+              <p class="text">
+                Semua tool ini default-nya pasif, jadi aman secara legal. Tapi
+                kalau ini engagement real, pastikan kamu punya scope + izin
+                tertulis.
+              </p>
+
+              <div class="thread-interaction">
+                <div class="left-interaction">
+                  <div class="vote">
+                    <div class="upvote">
+                      <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                      <p class="text">20</p>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                    <p class="text">0</p>
+                  </div>
+                  <div class="share">
+                    <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-2">
+        <div class="sidebar-card">
+          <h3 class="small-title">
+            More From <span class="accent">newbieSec</span>
+
+            <div class="other-thread margin-top-1">
+              <p class="text">Bagaimana cara melakukan OSINT di Kali Linux?</p>
+              <div class="badge-group">
+                <p class="badge tiny-text">#osint</p>
+                <p class="badge tiny-text">#kali-linux</p>
+              </div>
+            </div>
+            <div class="other-thread margin-top-1">
+              <p class="text">Kenapa airmon-ng saya tidak berfungsi?</p>
+              <div class="badge-group">
+                <p class="badge tiny-text">#wifi</p>
+                <p class="badge tiny-text">#hacking</p>
+                <p class="badge tiny-text">#kali-linux</p>
+              </div>
+            </div>
+            <div class="other-thread margin-top-1">
+              <p class="text">Terdapat masalah saat sudo apt update?</p>
+              <div class="badge-group">
+                <p class="badge tiny-text">#sudo</p>
+                <p class="badge tiny-text">#kali-linux</p>
+              </div>
+            </div>
+          </h3>
+        </div>
       </div>
     </main>
 

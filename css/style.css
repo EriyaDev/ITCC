@@ -10,6 +10,10 @@
   --border-color: #3d3c40;
 }
 
+.accent{
+  color: var(--accent-color);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,7 +82,7 @@ body {
 
 .code-container{
   display: block;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: var(--text-primary-color);
   padding: 12px 24px;
   border-radius: 8px;
@@ -427,7 +431,7 @@ header {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 .sidebar-list{
@@ -447,9 +451,14 @@ li{
 }
 
 /* Main Content */
-
 #main-content-container{
   padding-top: 74px;
+}
+
+.detail-page #main-content-container{
+  padding-top: 74px;
+  grid-template-columns: 1fr;
+  width: 100%;
 }
 
 #main-content{
@@ -466,6 +475,12 @@ li{
   flex-direction: column;
   gap: 20px;
   padding: 32px;
+  transition: .3s ease-out;
+}
+
+.thread-card:hover{
+  border: 1px solid var(--text-secondary-color);
+  transition: .3s ease-out;
 }
 
 .thread-interaction{
@@ -531,13 +546,76 @@ li{
   list-style: disc;
 }
 
+.sidebar-card{
+  background: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px;
+}
+
+.other-thread{
+  padding: 12px 0px;
+  border-top: 1px solid var(--border-color);
+}
+
+.sidebar-2{
+    display: none;
+  }
+
+  .comment-balloon{
+  background: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 0 6px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+}
+
+.thread-comments{
+  margin-top: 72px;
+}
+
+.reply-user-comment{
+  padding-left: 32px;
+}
+
+.username{
+  font-size: 16px;
+}
+
+pre{
+  overflow-x: auto;
+}
+
 @media (min-width: 1024px) {
   #main-content-container{
+    display: grid;
     margin-left: 216px;
     padding-top: 74px;
     width: calc(100vw - 216px);
     height: calc(100vh - 74px);
     /* overflow-x: hidden; */
+  }
+  
+  body.detail-page #main-content-container{
+    display: grid;
+    margin-left: 216px;
+    padding-top: 74px;
+    width: calc(100vw - 216px);
+    height: calc(100vh - 74px);
+    grid-template-columns: 4fr 2fr;
+    /* overflow-x: hidden; */
+  }
+  
+  
+  .sidebar-2{
+    display: block;
+    max-width: 90%;
+    padding-top: 32px;
   }
 
   #main-content{
