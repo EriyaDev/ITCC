@@ -112,6 +112,28 @@ pre code {
   margin-top: 32px;
 }
 
+.clamp-1 {
+  display: -webkit-box;           
+  -webkit-box-orient: vertical;   
+  -webkit-line-clamp: 1;          
+  overflow: hidden;    
+  text-overflow: ellipsis;           
+}
+.clamp-2 {
+  display: -webkit-box;           
+  -webkit-box-orient: vertical;   
+  -webkit-line-clamp: 2;          
+  overflow: hidden;    
+  text-overflow: ellipsis;           
+}
+.clamp-3 {
+  display: -webkit-box;           
+  -webkit-box-orient: vertical;   
+  -webkit-line-clamp: 3;          
+  overflow: hidden;    
+  text-overflow: ellipsis;           
+}
+
 
 
 @media (min-width: 768px){
@@ -563,6 +585,7 @@ li{
 
 .sidebar-2{
     display: none;
+    
   }
 
   .comment-balloon{
@@ -591,17 +614,16 @@ pre{
   overflow-x: auto;
 }
 
+.who-to-follow-profile{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 @media (min-width: 1024px) {
-  #main-content-container{
-    display: grid;
-    margin-left: 216px;
-    padding-top: 74px;
-    width: calc(100vw - 216px);
-    height: calc(100vh - 74px);
-    /* overflow-x: hidden; */
-  }
   
-  body.detail-page #main-content-container{
+  
+  #main-content-container{
     display: grid;
     margin-left: 216px;
     padding-top: 74px;
