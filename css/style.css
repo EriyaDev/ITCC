@@ -134,7 +134,29 @@ pre code {
   text-overflow: ellipsis;           
 }
 
+.text-center{
+  text-align: center;
+}
 
+.margin-auto{
+  margin: auto;
+}
+
+.interactable-icon{
+  filter: brightness(1);
+  transition: all .3s ease-out;
+}
+
+.interactable-icon:hover{
+  transition: all .3s ease-out;
+  filter: brightness(.7);
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (min-width: 768px){
   .big-title {
@@ -222,6 +244,7 @@ button,
 a,
 .can-hover {
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 button{
@@ -640,9 +663,7 @@ pre{
   flex-wrap: wrap;
 }
 
-.text-center{
-  text-align: center;
-}
+
 
 @media (min-width: 1024px) {
   
