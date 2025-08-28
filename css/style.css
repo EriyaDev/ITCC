@@ -537,9 +537,22 @@ li{
   gap: 4px;
 }
 
+.information{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .profile-picture{
   width: 32px;
   height: 32px;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+
+.big-profile-picture{
+  width: 84px;
+  height: 84px;
   aspect-ratio: 1/1;
   border-radius: 100%;
 }
@@ -618,6 +631,17 @@ pre{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.profile-information{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.text-center{
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
