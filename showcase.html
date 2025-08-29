@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberNest</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar section-container">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="" class="logo" />
+        </div>
+
+        <ul class="nav-link-container">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#wcu">Why Choose Us</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#about">About</a></li>
+          <div class="button-container">
+            <button class="button-secondary desktop-only">Sign In</button>
+            <button class="button-primary desktop-only">Sign Up</button>
+          </div>
+        </ul>
+        <div class="menu-icon mobile-only" onclick="showNav()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+          </svg>
+        </div>
+      </nav>
+
+      <div class="nav-mobile nav-hidden" id="nav-mobile">
+        <ul>
+          <div class="nav-mobile-top">
+            <div class="close-icon" onclick="closeNav()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-buttons">
+            <button class="button-secondary">Sign In</button>
+            <button class="button-primary">Sign Up</button>
+          </div>
+          <li>
+            <img
+              class="icon"
+              src="assets/icons/price-tag-3-fill.svg"
+              alt=""
+            /><a class="text" href="#home" onclick="closeNav()">Tags</a>
+          </li>
+          <li>
+            <img class="icon" src="assets/icons/showcase.svg" alt="" /><a
+              class="text"
+              href="#wcu"
+              onclick="closeNav()"
+              >Showcase</a
+            >
+          </li>
+          <li>
+            <img class="icon" src="assets/icons/video-fill.svg" alt="" /><a
+              class="text"
+              href="#service"
+              onclick="closeNav()"
+              >Videos</a
+            >
+          </li>
+
+          <div class="popular-tags-sidebar">
+            <li>
+              <p class="small-title">Popular Tags</p>
+            </li>
+            <li>
+              <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+                class="text"
+                href="#home"
+                onclick="closeNav()"
+                >kalilinux</a
+              >
+            </li>
+            <li>
+              <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+                class="text"
+                href="#home"
+                onclick="closeNav()"
+                >hacking</a
+              >
+            </li>
+            <li>
+              <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+                class="text"
+                href="#home"
+                onclick="closeNav()"
+                >pentesting</a
+              >
+            </li>
+            <li>
+              <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+                class="text"
+                href="#home"
+                onclick="closeNav()"
+                >bugbounty</a
+              >
+            </li>
+            <li>
+              <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+                class="text"
+                href="#home"
+                onclick="closeNav()"
+                >ransomware</a
+              >
+            </li>
+          </div>
+        </ul>
+      </div>
+    </header>
+
+    <aside id="sidebar">
+      <ul>
+        <li class="sidebar-list">
+          <img class="icon" src="assets/icons/price-tag-3-fill.svg" alt="" /><a
+            class="text"
+            href="all-tags.html"
+            onclick="closeNav()"
+            >Tags</a
+          >
+        </li>
+        <li class="sidebar-list">
+          <img class="icon" src="assets/icons/showcase.svg" alt="" /><a
+            class="text"
+            href="showcase.html"
+            onclick="closeNav()"
+            >Showcase</a
+          >
+        </li>
+        <li class="sidebar-list">
+          <img class="icon" src="assets/icons/video-fill.svg" alt="" /><a
+            class="text"
+            href="videos.html"
+            onclick="closeNav()"
+            >Videos</a
+          >
+        </li>
+
+        <div class="popular-tags-sidebar">
+          <li class="">
+            <p class="small-title">Popular Tags</p>
+          </li>
+          <li class="sidebar-list margin-top-1">
+            <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+              class="text"
+              href="#home"
+              onclick="closeNav()"
+              >kalilinux</a
+            >
+          </li>
+          <li class="sidebar-list">
+            <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+              class="text"
+              href="#home"
+              onclick="closeNav()"
+              >hacking</a
+            >
+          </li>
+          <li class="sidebar-list">
+            <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+              class="text"
+              href="#home"
+              onclick="closeNav()"
+              >pentesting</a
+            >
+          </li>
+          <li class="sidebar-list">
+            <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+              class="text"
+              href="#home"
+              onclick="closeNav()"
+              >bugbounty</a
+            >
+          </li>
+          <li class="sidebar-list">
+            <img class="icon" src="assets/icons/hashtag.svg" alt="" /><a
+              class="text"
+              href="#home"
+              onclick="closeNav()"
+              >ransomware</a
+            >
+          </li>
+        </div>
+      </ul>
+    </aside>
+
+    <main id="main-content-container">
+      <div id="main-content">
+        <h1 class="small-title">Latest Showcase From Community</h1>
+        <div class="card-container margin-top-3">
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-2">
+        <div class="sidebar-card">
+          <h3 class="small-title">
+            Who to Follow
+
+            <div class="other-thread margin-top-1">
+              <div class="who-to-follow-profile">
+                <div class="profile">
+                  <img
+                    src="assets/images/profile.jpg"
+                    class="profile-picture"
+                    alt=""
+                  />
+                  <div class="profile-detail">
+                    <p class="name text">ucilHacker</p>
+                    <p class="date tiny-text">Pentester</p>
+                  </div>
+                </div>
+                <button class="button-secondary">Follow</button>
+              </div>
+            </div>
+            <div class="other-thread margin-top-1">
+              <div class="who-to-follow-profile">
+                <div class="profile">
+                  <img
+                    src="assets/images/profile.jpg"
+                    class="profile-picture"
+                    alt=""
+                  />
+                  <div class="profile-detail">
+                    <p class="name text">Jack D Morgan</p>
+                    <p class="date tiny-text">Digital Forensics Investigator</p>
+                  </div>
+                </div>
+                <button class="button-secondary">Follow</button>
+              </div>
+            </div>
+            <div class="other-thread margin-top-1">
+              <div class="who-to-follow-profile">
+                <div class="profile">
+                  <img
+                    src="assets/images/profile.jpg"
+                    class="profile-picture"
+                    alt=""
+                  />
+                  <div class="profile-detail">
+                    <p class="name text">Mrxsha</p>
+                    <p class="date tiny-text">Reverse Engineer</p>
+                  </div>
+                </div>
+                <button class="button-secondary">Follow</button>
+              </div>
+            </div>
+          </h3>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="">
+        <div class="section">
+          <h2>Headings</h2>
+          <div class="example big-title">Big Title Example</div>
+          <div class="example medium-title">Medium Title Example</div>
+          <div class="example small-title">Small Title Example</div>
+        </div>
+    
+        <div class="section">
+          <h2>Paragraph Text</h2>
+          <div class="example text">
+            This is a regular paragraph using the <code>.text</code> class. It is
+            ideal for body content in your forum posts.
+          </div>
+          <div class="example small-text">
+            This is a small paragraph using the <code>.small-text</code> class.
+            Perfect for metadata, timestamps, or subtle details.
+          </div>
+        </div>
+    
+        <div class="section">
+          <h2>Colors</h2>
+          <div
+            class="example"
+            style="
+              background: var(--primary-color);
+              color: var(--text-primary-color);
+              padding: 1rem;
+            "
+          >
+            Primary Background
+          </div>
+          <div
+            class="example"
+            style="
+              background: var(--secondary-color);
+              color: var(--text-primary-color);
+              padding: 1rem;
+            "
+          >
+            Secondary Background
+          </div>
+          <div
+            class="example"
+            style="background: var(--accent-color); color: #000; padding: 1rem"
+          >
+            Accent Color
+          </div>
+          <div class="example" style="color: var(--text-primary-color)">
+            Text Primary Color
+          </div>
+          <div class="example" style="color: var(--text-secondary-color)">
+            Text Secondary Color
+          </div>
+        </div>
+    </div> -->
+
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>

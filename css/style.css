@@ -185,7 +185,7 @@ a {
 }
 
 .small-title {
-  font-size: 1.2rem;
+  font-size: 24px;
 }
 
 .text {
@@ -228,6 +228,19 @@ a{
   padding: 2px 8px;
   border-radius: 4px;
   width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-badge{
+  background-color: #406aeb26;
+  padding: 8px;
+  border-radius: 4px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .badge-group{
@@ -444,6 +457,9 @@ header {
   height: 24px;
   cursor: pointer;
 }
+.w-full{
+  width: 100% !important;
+}
 
 
 /* Sidebar */
@@ -502,14 +518,17 @@ li{
 
 .detail-page #main-content-container{
   padding-top: 74px;
+  align-items: start;
   grid-template-columns: 1fr;
   width: 100%;
 }
 
 #main-content{
-  max-width: 85%;
+  height: 100%;
+  width: 85%;
   padding-top: 32px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card{
@@ -518,6 +537,8 @@ li{
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
   gap: 20px;
   padding: 32px;
   transition: .3s ease-out;
@@ -529,6 +550,7 @@ li{
 }
 
 .thread-interaction{
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -554,7 +576,8 @@ li{
 .share,
 .bookmark,
 .more,
-.copy{
+.copy,
+.icon-with-desc{
   display: flex;
   align-items: center;
   gap: 4px;
@@ -659,8 +682,14 @@ pre{
 .profile-information{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.sticky-sidebar{
+  position: sticky;
+  top: 85px;
 }
 
 
@@ -670,6 +699,7 @@ pre{
   
   #main-content-container{
     display: grid;
+    align-items: start;
     margin-left: 216px;
     padding-top: 74px;
     width: calc(100vw - 216px);
@@ -677,10 +707,29 @@ pre{
     grid-template-columns: 4fr 2fr;
     /* overflow-x: hidden; */
   }
+
+  body.portofolio #main-content-container,
+  body.tags #main-content-container{
+    display: grid;
+    margin-left: 216px;
+    padding-top: 74px;
+    width: calc(100vw - 216px);
+    height: calc(100vh - 74px);
+    grid-template-columns: 1fr;
+    /* overflow-x: hidden; */
+  }
+
+  .profile-layout{
+    display: grid;
+    align-items: start;
+    grid-template-columns: 2fr 4fr;
+    gap: 24px;
+  }
   
   
   .sidebar-2{
     display: block;
+    align-items: start;
     max-width: 90%;
     padding-top: 32px;
   }
@@ -688,4 +737,10 @@ pre{
   #main-content{
   max-width: 90%;
 }
+}
+
+.all-tags-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
 }
