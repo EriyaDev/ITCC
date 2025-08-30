@@ -14,19 +14,38 @@
   <body>
     <header>
       <nav class="navbar section-container">
-        <div class="logo">
-          <img src="assets/images/logo.svg" alt="" class="logo" />
+        <div class="left-nav">
+          <div class="logo">
+            <img src="assets/images/logo.svg" alt="" class="logo" />
+          </div>
+
+          <input
+            type="search"
+            class="input-box desktop-only"
+            placeholder="Search Question..."
+            name=""
+            id=""
+          />
         </div>
 
         <ul class="nav-link-container">
           <li><a href="index.html">Home</a></li>
 
           <li><a href="all-questions.html">Questions</a></li>
-          <li><a href="#service">Service</a></li>
-          <li><a href="#about">About</a></li>
+
           <div class="button-container">
-            <button class="button-secondary desktop-only">Sign In</button>
-            <button class="button-primary desktop-only">Sign Up</button>
+            <!-- <button class="button-secondary desktop-only">Sign In</button>
+            <button class="button-primary desktop-only">Sign Up</button> -->
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+              </div>
+            </div>
           </div>
         </ul>
         <div class="menu-icon mobile-only" onclick="showNav()">
@@ -209,7 +228,18 @@
 
     <main id="main-content-container">
       <div id="main-content">
-        <!-- <div class="swiper-container">
+        <div class="profile create-thread">
+          <img src="assets/images/profile.jpg" class="profile-picture" alt="" />
+          <input
+            type="text"
+            class="input-box w-full"
+            placeholder="What's on your mind?"
+            name=""
+            id=""
+          />
+          <button class="button-primary">Post</button>
+        </div>
+        <div class="swiper-container margin-top-3>
           <h1 class="small-title">Popular Tags</h1>
           <div class="w-full">
             <div class="swiper many-swiper margin-top-3">
@@ -274,9 +304,9 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
-        </div> -->
+        </div>
         <h1 class="small-title">Popular Discussion</h1>
-        <div class="card-container margin-top-3">
+        <div class="card-container margin-top-2">
           <a href="thread-detail.html" class="card thread-card">
             <div class="profile">
               <img
@@ -473,6 +503,186 @@
               <div class="right-interaction">
                 <div class="bookmark">
                   <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <h1 class="small-title margin-top-4">Latest Showcase From Community</h1>
+        <div class="card-container margin-top-2">
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="project-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <img src="assets/images/kali-desktop.jpg" alt="" class="w-full" />
+            <div class="w-full">
+              <p class="small-title clamp-1">
+                PhishEye – Deteksi Link Phishing Real-Time
+              </p>
+              <div class="badge-group margin-top-1">
+                <p class="badge">#osint</p>
+                <p class="badge">#reconnaissance</p>
+                <p class="badge">#ethical-hacking</p>
+                <p class="badge">#kali-linux</p>
+                <p class="badge">#pentesting</p>
+              </div>
+            </div>
+
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
                 </div>
               </div>
             </div>

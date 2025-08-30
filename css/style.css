@@ -102,6 +102,22 @@ body {
   border: 1px solid var(--border-color);
 }
 
+.input-box{
+  background-color: var(--secondary-color);
+  color: var(--text-primary-color);
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-family: "Inter", sans-serif;
+  width: 300px;
+}
+
+.input-box::placeholder{
+  color: var(--text-secondary-color);
+  font-family: "Inter", sans-serif;
+
+}
+
 pre code {
   font-family: 'Fira Code', monospace;
   overflow-x: auto;
@@ -176,6 +192,14 @@ a {
   align-items: center;
 }
 
+.left-nav{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  gap: 24px;
+}
+
 @media (min-width: 768px){
   .big-title {
   font-size: 36px;
@@ -191,6 +215,10 @@ a {
 
 .text {
   font-size: 16px;
+}
+
+.input-box{
+  display: block;
 }
 }
 @media (min-width: 1024px){
@@ -209,6 +237,10 @@ a {
 .text {
   font-size: 16px;
 }
+}
+
+.swiper-container{
+  display: none;
 }
 
 .profile{
@@ -727,6 +759,45 @@ pre{
   margin-top: 24px;
 }
 
+.pagination-container{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.pagination{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.pagination-button{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.pagination-primary{
+  background-color: var(--accent-color);
+  color: var(--text-primary-color);
+}
+
+.pagination-secondary{
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary-color);
+}
+
+.create-thread{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 @media (min-width: 768px){
   .profile-information{
   display: flex;
@@ -735,6 +806,10 @@ pre{
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 24px;
+}
+
+.all-tags-container{
+  grid-template-columns: repeat(3, 1fr);
 }
 }
 
@@ -771,6 +846,10 @@ pre{
   justify-content: center;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.all-tags-container{
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .certification{
@@ -820,6 +899,5 @@ pre{
 
 .all-tags-container{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 16px;
 }
