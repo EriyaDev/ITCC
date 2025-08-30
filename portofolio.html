@@ -6,6 +6,10 @@
     <title>CyberNest</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body class="portofolio">
     <header>
@@ -15,8 +19,9 @@
         </div>
 
         <ul class="nav-link-container">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#wcu">Why Choose Us</a></li>
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="all-questions.html">Questions</a></li>
           <li><a href="#service">Service</a></li>
           <li><a href="#about">About</a></li>
           <div class="button-container">
@@ -226,22 +231,24 @@
                 <div class="small-text">aditya.rahman.secure@example.com</div>
               </div>
               <div class="information">
-                <a href="">
-                  <img
-                    src="assets/icons/github-fill.svg"
-                    alt=""
-                    class="interactable-icon can-hover"
-                  />
-                </a>
-                <a href="">
-                  <img
-                    src="assets/icons/twitter-fill.svg"
-                    alt=""
-                    class="interactable-icon can-hover"
-                  />
-                </a>
+                <div class="information">
+                  <a href="">
+                    <img
+                      src="assets/icons/github-fill.svg"
+                      alt=""
+                      class="interactable-icon can-hover"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="assets/icons/twitter-fill.svg"
+                      alt=""
+                      class="interactable-icon can-hover"
+                    />
+                  </a>
+                </div>
+                <button class="button-secondary">Follow</button>
               </div>
-              <button class="button-secondary">Follow</button>
             </div>
           </div>
         </div>
@@ -264,8 +271,68 @@
                 </div>
               </div>
             </div>
-            <div class="card margin-top-3">
-              <h4 class="small-title">Skills/Languages</h4>
+            <div class="card margin-top-2">
+              <h4 class="small-title">Achievements/Certification</h4>
+              <div class="achievement-container">
+                <div class="achievement">
+                  <div class="certification">
+                    <img
+                      src="assets/icons/ethical-hacking.webp"
+                      alt=""
+                      class="certification-image"
+                    />
+                  </div>
+                  <div class="">
+                    <p class="text clamp-2">
+                      Sertifikasi CEH (Certified Ethical Hacker)
+                    </p>
+                    <p class="tiny-text">Issued Nov 2024</p>
+                  </div>
+                </div>
+                <div class="achievement">
+                  <div class="certification">
+                    <img
+                      src="assets/icons/oscp.png"
+                      alt=""
+                      class="certification-image"
+                    />
+                  </div>
+                  <div class="">
+                    <p class="text clamp-2">
+                      Offensive Security Certified Professional (OSCP)
+                    </p>
+                    <p class="tiny-text">Issued Nov 2024</p>
+                  </div>
+                </div>
+                <div class="achievement">
+                  <div class="certification">
+                    <img
+                      src="assets/icons/comptia.png"
+                      alt=""
+                      class="certification-image"
+                    />
+                  </div>
+                  <div class="">
+                    <p class="text clamp-2">CompTIA Security+</p>
+                    <p class="tiny-text">Issued Nov 2024</p>
+                  </div>
+                </div>
+                <div class="achievement">
+                  <div class="certification badge">
+                    <img
+                      src="assets/images/logo-only.svg"
+                      alt=""
+                      class="certification-image"
+                    />
+                  </div>
+                  <div class="">
+                    <p class="text clamp-2">Juara 1 CTF Nasional</p>
+                    <p class="tiny-text">Sept 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card margin-top-2">
               <div class="icon-with-desc">
                 <img src="assets/icons/newspaper-line.svg" alt="" />
                 <p class="text">7 posts</p>
@@ -276,7 +343,7 @@
               </div>
             </div>
           </div>
-          <div class="w-full">
+          <div class="w-full portolio-content">
             <h1 class="small-title">Latest Projects</h1>
             <div class="card-container margin-top-2">
               <a href="project-detail.html" class="card thread-card">
@@ -497,63 +564,6 @@
         </div>
       </div>
     </main>
-
-    <!-- <div class="">
-        <div class="section">
-          <h2>Headings</h2>
-          <div class="example big-title">Big Title Example</div>
-          <div class="example medium-title">Medium Title Example</div>
-          <div class="example small-title">Small Title Example</div>
-        </div>
-    
-        <div class="section">
-          <h2>Paragraph Text</h2>
-          <div class="example text">
-            This is a regular paragraph using the <code>.text</code> class. It is
-            ideal for body content in your forum posts.
-          </div>
-          <div class="example small-text">
-            This is a small paragraph using the <code>.small-text</code> class.
-            Perfect for metadata, timestamps, or subtle details.
-          </div>
-        </div>
-    
-        <div class="section">
-          <h2>Colors</h2>
-          <div
-            class="example"
-            style="
-              background: var(--primary-color);
-              color: var(--text-primary-color);
-              padding: 1rem;
-            "
-          >
-            Primary Background
-          </div>
-          <div
-            class="example"
-            style="
-              background: var(--secondary-color);
-              color: var(--text-primary-color);
-              padding: 1rem;
-            "
-          >
-            Secondary Background
-          </div>
-          <div
-            class="example"
-            style="background: var(--accent-color); color: #000; padding: 1rem"
-          >
-            Accent Color
-          </div>
-          <div class="example" style="color: var(--text-primary-color)">
-            Text Primary Color
-          </div>
-          <div class="example" style="color: var(--text-secondary-color)">
-            Text Secondary Color
-          </div>
-        </div>
-    </div> -->
 
     <script src="js/sidebar.js"></script>
   </body>
