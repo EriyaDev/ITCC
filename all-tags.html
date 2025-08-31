@@ -30,8 +30,22 @@
           <li><a href="all-questions.html">Questions</a></li>
 
           <div class="button-container">
-            <button class="button-secondary desktop-only">Sign In</button>
-            <button class="button-primary desktop-only">Sign Up</button>
+            <!-- <button class="button-secondary desktop-only">Sign In</button>
+            <button class="button-primary desktop-only">Sign Up</button> -->
+            <a class="icon-with-desc icon-button-secondary" href=""
+              ><img src="assets/icons/add-line.svg" alt="" />
+              <p class="text">Create</p></a
+            >
+            <a class="icon-button-secondary" href=""
+              ><img src="assets/icons/notification-2-line.svg" alt=""
+            /></a>
+            <a href="portofolio.html" class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture border"
+                alt=""
+              />
+            </a>
           </div>
         </ul>
         <div class="menu-icon mobile-only" onclick="showNav()">
@@ -61,8 +75,26 @@
             </div>
           </div>
           <div class="mobile-buttons">
-            <button class="button-secondary">Sign In</button>
-            <button class="button-primary">Sign Up</button>
+            <div class="justify-between">
+              <a href="portofolio.html" class="profile">
+                <img
+                  src="assets/images/profile.jpg"
+                  class="profile-picture border"
+                  alt=""
+                />
+                <div class="profile-detail">
+                  <p class="name text">newbieSec</p>
+                  <p class="date tiny-text">21 Aug 2025</p>
+                </div>
+              </a>
+              <a class="icon-button-secondary" href=""
+                ><img src="assets/icons/notification-2-line.svg" alt=""
+              /></a>
+            </div>
+            <a class="icon-with-desc icon-button-secondary w-full" href=""
+              ><img src="assets/icons/add-line.svg" alt="" />
+              <p class="text">Create</p></a
+            >
           </div>
           <li>
             <img
@@ -158,7 +190,7 @@
         <li class="sidebar-list">
           <img class="icon" src="assets/icons/video-fill.svg" alt="" /><a
             class="text"
-            href="videos.html"
+            href="#"
             onclick="closeNav()"
             >Videos</a
           >
@@ -214,129 +246,136 @@
 
     <main id="main-content-container">
       <div id="main-content">
-        <p class="small-title">All Tags</p>
+        <h1 class="small-title">All Tags</h1>
         <div class="all-tags-container margin-top-2">
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#osint</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Teknik pengumpulan data dari sumber publik untuk investigasi
+                keamanan siber.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">1.2K+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#penetration-testing</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Proses simulasi serangan untuk mengidentifikasi celah keamanan
+                pada sistem.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">980+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#malware-analysis</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Analisis mendalam untuk memahami cara kerja dan dampak malware.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">700+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#digital-forensics</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Investigasi data digital untuk mengungkap bukti aktivitas siber.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">560+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#bug-bounty</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Program untuk menemukan dan melaporkan celah keamanan demi
+                imbalan.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">1.8K+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#cryptography</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Teknik enkripsi dan dekripsi untuk menjaga kerahasiaan data.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">1.1K+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#social-engineering</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Teknik manipulasi psikologis untuk mendapatkan informasi
+                rahasia.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">850+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#network-security</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Perlindungan infrastruktur jaringan dari serangan dan akses
+                ilegal.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">1.4K+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#cloud-security</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Keamanan data dan aplikasi yang berjalan di lingkungan cloud.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">930+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#reverse-engineering</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Teknik membongkar software untuk memahami arsitektur dan
+                fungsinya.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">620+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#siem</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Security Information and Event Management untuk monitoring
+                real-time.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
-          <div class="card">
-            <div class="">
-              <h2 class="small-title">#kali-linux</h2>
+            <p class="small-text">410+ posts</p>
+          </a>
+
+          <a href="all-questions.html" class="card">
+            <div>
+              <h2 class="small-title clamp-1">#iot-security</h2>
               <p class="tiny-text clamp-2">
-                Distro Linux berbasis Debian yang dirancang khusus untuk
-                penetration testing dan keamanan siber.
+                Proteksi perangkat Internet of Things dari serangan siber.
               </p>
             </div>
-            <p class="small-text">2000+ posts</p>
-          </div>
+            <p class="small-text">300+ posts</p>
+          </a>
         </div>
+
         <div class="w-full pagination-container">
           <div class="pagination">
             <button class="button-secondary">Previous</button>

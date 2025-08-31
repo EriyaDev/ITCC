@@ -11,7 +11,7 @@ var manySwiper = new Swiper(".many-swiper", {
       spaceBetween: 30,
     },
     768: {
-      slidesPerView: 1.6,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     1024: {

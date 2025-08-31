@@ -6,6 +6,10 @@
     <title>CyberNest</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -27,7 +31,7 @@
         <ul class="nav-link-container">
           <li><a href="index.html">Home</a></li>
 
-          <li><a href="all-questions.html">Questions</a></li>
+          <li><a class="accent" href="all-questions.html">Questions</a></li>
 
           <div class="button-container">
             <!-- <button class="button-secondary desktop-only">Sign In</button>
@@ -246,10 +250,21 @@
 
     <main id="main-content-container">
       <div id="main-content">
-        <h1 class="small-title">Latest Showcase From Community</h1>
+        <div class="profile create-thread">
+          <img src="assets/images/profile.jpg" class="profile-picture" alt="" />
+          <input
+            type="text"
+            class="input-box w-full"
+            placeholder="What's on your mind?"
+            name=""
+            id=""
+          />
+          <button class="button-primary">Post</button>
+        </div>
+        <h1 class="small-title">Top Discussions</h1>
         <div class="card-container margin-top-2">
-          <!-- Showcase 1 -->
-          <a href="project-detail.html" class="card thread-card">
+          <!-- Thread 1 (tetap) -->
+          <a href="thread-detail.html" class="card thread-card">
             <div class="profile">
               <img
                 src="assets/images/profile.jpg"
@@ -261,26 +276,26 @@
                 <p class="date tiny-text">21 Aug 2025</p>
               </div>
             </div>
-            <img src="assets/images/kali-desktop.webp" alt="" class="w-full" />
-            <div class="w-full">
-              <p class="small-title clamp-1">
-                PhishEye – Deteksi Link Phishing Real-Time
-              </p>
-              <div class="badge-group margin-top-1">
-                <p class="badge">#osint</p>
-                <p class="badge">#reconnaissance</p>
-                <p class="badge">#ethical-hacking</p>
-                <p class="badge">#kali-linux</p>
-                <p class="badge">#pentesting</p>
-              </div>
+            <h1 class="medium-title clamp-2">
+              Gimana Cara Lakukan OSINT Buat Footprinting Perusahaan Secara
+              Legal?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#osint</p>
+              <p class="badge">#reconnaissance</p>
+              <p class="badge">#ethical-hacking</p>
+              <p class="badge">#kali-linux</p>
+              <p class="badge">#pentesting</p>
             </div>
-
             <div class="thread-interaction">
               <div class="left-interaction">
                 <div class="vote">
                   <div class="upvote">
-                    <img src="assets/icons/thumb-up-line.svg" alt="" />
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
                     <p class="text">159</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
                   </div>
                 </div>
                 <div class="comment">
@@ -291,11 +306,16 @@
                   <img src="assets/icons/ri-share-forward-line.svg" alt="" />
                 </div>
               </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
             </div>
           </a>
 
-          <!-- Showcase 2 -->
-          <a href="project-detail.html" class="card thread-card">
+          <!-- Thread 2 -->
+          <a href="thread-detail.html" class="card thread-card">
             <div class="profile">
               <img
                 src="assets/images/profile.jpg"
@@ -304,43 +324,49 @@
               />
               <div class="profile-detail">
                 <p class="name text">cyberWolf</p>
-                <p class="date tiny-text">20 Aug 2025</p>
+                <p class="date tiny-text">19 Aug 2025</p>
               </div>
             </div>
-            <img src="assets/images/network-map.webp" alt="" class="w-full" />
-            <div class="w-full">
-              <p class="small-title clamp-1">
-                AutoReconX – Automation Tool untuk Recon Bug Bounty
-              </p>
-              <div class="badge-group margin-top-1">
-                <p class="badge">#bugbounty</p>
-                <p class="badge">#automation</p>
-                <p class="badge">#osint</p>
-                <p class="badge">#python</p>
-              </div>
+            <h1 class="medium-title clamp-2">
+              Tools Recon Paling Efektif Buat Bug Bounty Hunter Tahun Ini?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#bugbounty</p>
+              <p class="badge">#osint</p>
+              <p class="badge">#recon</p>
+              <p class="badge">#hacking-tools</p>
+              <p class="badge">#security</p>
             </div>
-
             <div class="thread-interaction">
               <div class="left-interaction">
                 <div class="vote">
                   <div class="upvote">
-                    <img src="assets/icons/thumb-up-line.svg" alt="" />
-                    <p class="text">134</p>
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">112</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">3</p>
                   </div>
                 </div>
                 <div class="comment">
                   <img src="assets/icons/ri-chat-3-line.svg" alt="" />
-                  <p class="text">25</p>
+                  <p class="text">22</p>
                 </div>
                 <div class="share">
                   <img src="assets/icons/ri-share-forward-line.svg" alt="" />
                 </div>
               </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
             </div>
           </a>
 
-          <!-- Showcase 3 -->
-          <a href="project-detail.html" class="card thread-card">
+          <!-- Thread 3 -->
+          <a href="thread-detail.html" class="card thread-card">
             <div class="profile">
               <img
                 src="assets/images/profile.jpg"
@@ -348,45 +374,49 @@
                 alt=""
               />
               <div class="profile-detail">
-                <p class="name text">packetHunter</p>
-                <p class="date tiny-text">18 Aug 2025</p>
+                <p class="name text">darkTracer</p>
+                <p class="date tiny-text">16 Aug 2025</p>
               </div>
             </div>
-            <img src="assets/images/network-map.webp" alt="" class="w-full" />
-            <div class="w-full">
-              <p class="small-title clamp-1">
-                NetMapVisualizer – Peta Jaringan Interaktif untuk Analisis
-                Keamanan
-              </p>
-              <div class="badge-group margin-top-1">
-                <p class="badge">#network</p>
-                <p class="badge">#visualization</p>
-                <p class="badge">#security-tools</p>
-                <p class="badge">#linux</p>
-              </div>
+            <h1 class="medium-title clamp-2">
+              Cara Aman Scan Port Tanpa Ke-detect Firewall?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#port-scanning</p>
+              <p class="badge">#nmap</p>
+              <p class="badge">#network-security</p>
+              <p class="badge">#stealth-mode</p>
             </div>
-
             <div class="thread-interaction">
               <div class="left-interaction">
                 <div class="vote">
                   <div class="upvote">
-                    <img src="assets/icons/thumb-up-line.svg" alt="" />
-                    <p class="text">102</p>
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">98</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">6</p>
                   </div>
                 </div>
                 <div class="comment">
                   <img src="assets/icons/ri-chat-3-line.svg" alt="" />
-                  <p class="text">14</p>
+                  <p class="text">15</p>
                 </div>
                 <div class="share">
                   <img src="assets/icons/ri-share-forward-line.svg" alt="" />
                 </div>
               </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
             </div>
           </a>
 
-          <!-- Showcase 4 -->
-          <a href="project-detail.html" class="card thread-card">
+          <!-- Thread 4 -->
+          <a href="thread-detail.html" class="card thread-card">
             <div class="profile">
               <img
                 src="assets/images/profile.jpg"
@@ -395,36 +425,245 @@
               />
               <div class="profile-detail">
                 <p class="name text">zeroDayGuy</p>
-                <p class="date tiny-text">15 Aug 2025</p>
+                <p class="date tiny-text">14 Aug 2025</p>
               </div>
             </div>
-            <img src="assets/images/web-scanner.png" alt="" class="w-full" />
-            <div class="w-full">
-              <p class="small-title clamp-1">
-                WebScanPro – Crawler untuk Cari Vulnerability di Website
-              </p>
-              <div class="badge-group margin-top-1">
-                <p class="badge">#web-scanner</p>
-                <p class="badge">#vulnerability</p>
-                <p class="badge">#crawler</p>
-                <p class="badge">#pentesting</p>
-              </div>
+            <h1 class="medium-title clamp-2">
+              Apa Bedanya Exploit dan Vulnerability? Banyak Yang Salah Kaprah!
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#vulnerability</p>
+              <p class="badge">#exploit</p>
+              <p class="badge">#cybersecurity</p>
+              <p class="badge">#pentesting</p>
             </div>
-
             <div class="thread-interaction">
               <div class="left-interaction">
                 <div class="vote">
                   <div class="upvote">
-                    <img src="assets/icons/thumb-up-line.svg" alt="" />
-                    <p class="text">178</p>
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">134</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">2</p>
                   </div>
                 </div>
                 <div class="comment">
                   <img src="assets/icons/ri-chat-3-line.svg" alt="" />
-                  <p class="text">31</p>
+                  <p class="text">27</p>
                 </div>
                 <div class="share">
                   <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <h1 class="small-title margin-top-4">Latest Discussions</h1>
+        <div class="card-container margin-top-2">
+          <!-- Thread 1 (tetap) -->
+          <a href="thread-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">newbieSec</p>
+                <p class="date tiny-text">21 Aug 2025</p>
+              </div>
+            </div>
+            <h1 class="medium-title clamp-2">
+              Gimana Cara Lakukan OSINT Buat Footprinting Perusahaan Secara
+              Legal?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#osint</p>
+              <p class="badge">#reconnaissance</p>
+              <p class="badge">#ethical-hacking</p>
+              <p class="badge">#kali-linux</p>
+              <p class="badge">#pentesting</p>
+            </div>
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">159</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">18</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Thread 2 -->
+          <a href="thread-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">cyberWolf</p>
+                <p class="date tiny-text">19 Aug 2025</p>
+              </div>
+            </div>
+            <h1 class="medium-title clamp-2">
+              Tools Recon Paling Efektif Buat Bug Bounty Hunter Tahun Ini?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#bugbounty</p>
+              <p class="badge">#osint</p>
+              <p class="badge">#recon</p>
+              <p class="badge">#hacking-tools</p>
+              <p class="badge">#security</p>
+            </div>
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">112</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">3</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">22</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Thread 3 -->
+          <a href="thread-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">darkTracer</p>
+                <p class="date tiny-text">16 Aug 2025</p>
+              </div>
+            </div>
+            <h1 class="medium-title clamp-2">
+              Cara Aman Scan Port Tanpa Ke-detect Firewall?
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#port-scanning</p>
+              <p class="badge">#nmap</p>
+              <p class="badge">#network-security</p>
+              <p class="badge">#stealth-mode</p>
+            </div>
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">98</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">6</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">15</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Thread 4 -->
+          <a href="thread-detail.html" class="card thread-card">
+            <div class="profile">
+              <img
+                src="assets/images/profile.jpg"
+                class="profile-picture"
+                alt=""
+              />
+              <div class="profile-detail">
+                <p class="name text">zeroDayGuy</p>
+                <p class="date tiny-text">14 Aug 2025</p>
+              </div>
+            </div>
+            <h1 class="medium-title clamp-2">
+              Apa Bedanya Exploit dan Vulnerability? Banyak Yang Salah Kaprah!
+            </h1>
+            <div class="badge-group">
+              <p class="badge">#vulnerability</p>
+              <p class="badge">#exploit</p>
+              <p class="badge">#cybersecurity</p>
+              <p class="badge">#pentesting</p>
+            </div>
+            <div class="thread-interaction">
+              <div class="left-interaction">
+                <div class="vote">
+                  <div class="upvote">
+                    <img src="assets/icons/ri-arrow-up-line.svg" alt="" />
+                    <p class="text">134</p>
+                  </div>
+                  <div class="downvote">
+                    <img src="assets/icons/ri-arrow-down-line.svg" alt="" />
+                    <p class="text">2</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img src="assets/icons/ri-chat-3-line.svg" alt="" />
+                  <p class="text">27</p>
+                </div>
+                <div class="share">
+                  <img src="assets/icons/ri-share-forward-line.svg" alt="" />
+                </div>
+              </div>
+              <div class="right-interaction">
+                <div class="bookmark">
+                  <img src="assets/icons/ri-bookmark-line.svg" alt="" />
                 </div>
               </div>
             </div>
@@ -489,63 +728,8 @@
       </div>
     </main>
 
-    <!-- <div class="">
-        <div class="section">
-          <h2>Headings</h2>
-          <div class="example big-title">Big Title Example</div>
-          <div class="example medium-title">Medium Title Example</div>
-          <div class="example small-title">Small Title Example</div>
-        </div>
-    
-        <div class="section">
-          <h2>Paragraph Text</h2>
-          <div class="example text">
-            This is a regular paragraph using the <code>.text</code> class. It is
-            ideal for body content in your forum posts.
-          </div>
-          <div class="example small-text">
-            This is a small paragraph using the <code>.small-text</code> class.
-            Perfect for metadata, timestamps, or subtle details.
-          </div>
-        </div>
-    
-        <div class="section">
-          <h2>Colors</h2>
-          <div
-            class="example"
-            style="
-              background: var(--primary-color);
-              color: var(--text-primary-color);
-              padding: 1rem;
-            "
-          >
-            Primary Background
-          </div>
-          <div
-            class="example"
-            style="
-              background: var(--secondary-color);
-              color: var(--text-primary-color);
-              padding: 1rem;
-            "
-          >
-            Secondary Background
-          </div>
-          <div
-            class="example"
-            style="background: var(--accent-color); color: #000; padding: 1rem"
-          >
-            Accent Color
-          </div>
-          <div class="example" style="color: var(--text-primary-color)">
-            Text Primary Color
-          </div>
-          <div class="example" style="color: var(--text-secondary-color)">
-            Text Secondary Color
-          </div>
-        </div>
-    </div> -->
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/sidebar.js"></script>
   </body>
 </html>

@@ -24,7 +24,7 @@
 }
 
 .accent{
-  color: var(--accent-color);
+  color: var(--accent-color) !important;
 }
 
 * {
@@ -237,11 +237,11 @@ a {
 .text {
   font-size: 16px;
 }
-}
-
 .swiper-container{
   display: none;
 }
+}
+
 
 .profile{
   display: flex;
@@ -382,7 +382,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 /* Tombol */
@@ -403,6 +403,16 @@ header {
   border-radius: 6px;
   border: 1px solid var(--border-color);
   padding: 8px 16px;
+  font-weight: 500;
+  color: var(--text-primary-color);
+  background: var(--secondary-color);
+  cursor: pointer;
+}
+
+.icon-button-secondary {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  padding: 8px;
   font-weight: 500;
   color: var(--text-primary-color);
   background: var(--secondary-color);
@@ -459,7 +469,7 @@ header {
 .nav-mobile-top{
   width: 100%;
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--border-color);
+  /* border-bottom: 1px solid var(--border-color); */
 }
 
 .nav-mobile ul {
@@ -495,12 +505,21 @@ header {
   transform: translateX(100%);
 }
 
+.justify-between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* Mobile buttons */
 .mobile-buttons {
+  align-items: start;
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 12px;
+  padding-top: 20px;
   border-top: 1px solid var(--border-color);
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border-color);
@@ -658,9 +677,14 @@ li{
   border-radius: 100%;
 }
 
+.border{
+  border: 1px solid var(--border-color);
+}
+
 .big-profile-picture{
   width: 84px;
   height: 84px;
+  object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: 100%;
 }
@@ -750,10 +774,7 @@ pre{
   margin-top: 24px;
 }
 
-.sticky-sidebar{
-  position: sticky;
-  top: 85px;
-}
+
 
 .portolio-content{
   margin-top: 24px;
@@ -797,6 +818,25 @@ pre{
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.certification{
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.certification-image{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.achievement{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
 
 @media (min-width: 768px){
   .profile-information{
@@ -828,6 +868,11 @@ pre{
     /* overflow-x: hidden; */
   }
 
+  .sticky-sidebar{
+  position: sticky;
+  top: 85px;
+}
+
   body.portofolio #main-content-container,
   body.tags #main-content-container{
     display: grid;
@@ -851,27 +896,6 @@ pre{
 .all-tags-container{
   grid-template-columns: repeat(4, 1fr);
 }
-
-.certification{
-  width: 48px;
-  height: 48px;
-  object-fit: contain;
-  aspect-ratio: 1/1;
-}
-
-.certification-image{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 4px;
-}
-
-.achievement{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 
 .portolio-content{
   margin-top: 0;
